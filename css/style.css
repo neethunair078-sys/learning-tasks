@@ -58,7 +58,7 @@ a {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .nav-right a {
@@ -108,6 +108,7 @@ a {
 /* OUR SERVICES SECTION */
 
 .services-section {
+    padding: 4rem 0;
 }
 
 .services-title {
