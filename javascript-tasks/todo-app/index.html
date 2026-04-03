@@ -1,1 +1,38 @@
- 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body>
+    <section class="todo-section">
+      <h1>TODO LIST</h1>
+      <h3>Total task: <span id="total"></span></h3>
+
+      <div class="add-section">
+        <input
+          type="text"
+          placeholder="Add new task"
+          id="add-todo"
+          class="add-new"
+          oninput="toggleButtonDisable()"
+        />
+        <button id="add-btn" class="add-btn" onclick="addTodo()" disabled>Submit</button>
+      </div>
+
+      <div>
+
+        <button class="status-btn" onclick="filterList('all')">All</button>
+            <button class="status-btn status-btn-completed" onclick="filterList('completed')">Completed</button>
+            <button class="status-btn status-btn-pending" onclick="filterList('pending')">Pending</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
